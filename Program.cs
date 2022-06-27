@@ -1,4 +1,22 @@
-﻿//Snack 5
+﻿//Snack 10
+{
+    Console.Write("Inserisci un numero ");
+    int n = Int32.Parse(Console.ReadLine());
+    Random rnd = new Random();
+    for (int i = 0; i < n; i++)
+    {
+        int[] arrNum = new int[10];
+        Console.WriteLine($"Array {i+1}:");
+        for (int j = 0; j < 10; j++)
+        {
+            arrNum[j] = rnd.Next(1, 100);
+            Console.WriteLine($"{j}. {arrNum[j]}");
+        }
+    }
+
+}
+
+//Snack 5
 {
     Console.Write("Inserisci un numero ");
     int newNum = Int32.Parse(Console.ReadLine());
