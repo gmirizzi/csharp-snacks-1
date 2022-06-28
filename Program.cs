@@ -1,4 +1,26 @@
-﻿//Snack 10
+﻿//Snack 11
+{
+    Console.Write("Inserisci una parola ");
+    string firstWord = Console.ReadLine();
+    Console.Write("Inserisci una parola ");
+    string secondWord = Console.ReadLine();
+    string PrintWord (string word1, string word2)
+    {
+        if (word1.Length == word2.Length)
+        {
+            return $"{word1} e {word2}";
+        } else if (word1.Length > word2.Length)
+        {
+            return word1;
+        } else
+        {
+            return word2;
+        }
+    }
+    Console.WriteLine(PrintWord(firstWord, secondWord));
+}
+
+//Snack 10
 {
     Console.Write("Inserisci un numero ");
     int n = Int32.Parse(Console.ReadLine());
@@ -9,8 +31,8 @@
         Console.WriteLine($"Array {i+1}:");
         for (int j = 0; j < 10; j++)
         {
-            arrNum[j] = rnd.Next(1, 100);
-            Console.WriteLine($"{j}. {arrNum[j]}");
+            arrNum[j] = rnd.Next(1, 101);
+            Console.WriteLine($"{j+1}. {arrNum[j]}");
         }
     }
 
