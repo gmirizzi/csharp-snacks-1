@@ -1,4 +1,21 @@
-﻿//Snack 11
+﻿//Snack 12
+{
+    string PariDispari (int num)
+    {
+        if (num % 2 == 0)
+        {
+            return "Pari";
+        } else
+        {
+            return "Dispari";
+        }
+    }
+    Console.Write("Inserisci un numero ");
+    int n = Int32.Parse(Console.ReadLine());
+    Console.WriteLine(PariDispari(n));
+}
+
+//Snack 11
 {
     Console.Write("Inserisci una parola ");
     string firstWord = Console.ReadLine();
